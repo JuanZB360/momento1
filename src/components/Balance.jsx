@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const Balance = ({ registros }) => {
+const Balance = ({  registros }) => {
 
     const [misIngresos, setMisIngresos] = useState(0);
     const [misGastos, setMisGastos] = useState(0);
     const [miBalance, setMiBalance] = useState(0);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const ingresos = registros
             .filter(registro => registro.tipo === 'Ingreso')
             .reduce((total, registro) => total + Number(registro.valor), 0);

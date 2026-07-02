@@ -35,7 +35,7 @@ const Form = ({agregarGasto}) => {
                         id="Tipo"
                         required
                         defaultValue="" 
-                        className="peer w-full bg-transparent border-b-2 border-gray-300 py-1 outline-none transition-colors focus:border-[#3E9C7A] text-gray-700 appearance-none"
+                        className="w-full h-fit outline-none border-b-2 border-gray-300 py-1 transition-colors focus:border-[#3E9C7A]"
                     >
                         <option value="" disabled hidden>Selecciona un tipo</option>
                         <option value="Ingreso">Ingreso</option>
