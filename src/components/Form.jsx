@@ -13,7 +13,7 @@ const Form = ({agregarGasto}) => {
 
         const nuevoRegistro = {
             id: Date.now(),
-            gasto: data.Gasto,
+            gasto: data.descripcion,
             valor: Number(data.Valor),
             tipo: data.Tipo,
             fecha: data.Fecha
@@ -27,7 +27,7 @@ const Form = ({agregarGasto}) => {
     return (
         <div className='w-full max-w-2xl h-fit py-10 px-6 sm:px-10 bg-amber-50 border-2 border-[#3E9C7A] rounded-lg shadow-lg shadow-[#3E9C7A]/50 flex justify-center items-center mx-4'>
             <form onSubmit={handleSubmit} className='w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center items-end'>
-                <Inputs type="text" nombre="Gasto" name="gasto" required={true} />
+                <Inputs type="text" nombre="Descripcion" name="descripcion" required={true} />
                 <Inputs type="number" nombre="Valor" name="valor" required={true} />
                 <div className="relative w-full flex flex-col">
                     <select 

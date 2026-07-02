@@ -7,7 +7,7 @@ const Registro = ({ registro, index }) => {
   return (
     <div className={`w-full h-fit border border-[#3E9C7A] rounded-lg shadow-md flex flex-col sm:grid sm:grid-cols-4 justify-center items-center px-4 py-3 transition-colors duration-200 ${esPar ? 'bg-[#2c6e5a] text-white' : 'bg-amber-50 text-gray-800'}`}>
         <div className={`w-full h-fit flex justify-center items-center text-center text-xs font-semibold sm:border-r ${esPar ? 'border-white/20' : 'border-[#3E9C7A]'}`}>
-            <h3>{registro.gasto}</h3>
+            <h3>{registro.descripcion}</h3>
         </div>
         
         <div className={`w-full h-fit flex justify-center items-center text-center text-xs sm:border-r ${esPar ? 'border-white/20' : 'border-[#3E9C7A]'}`}>
