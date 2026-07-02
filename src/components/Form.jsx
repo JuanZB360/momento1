@@ -13,7 +13,7 @@ const Form = ({agregarGasto}) => {
 
         const nuevoRegistro = {
             id: Date.now(),
-            descripcion: data.descripcion,
+            descripcion: data.Descripcion,
             valor: Number(data.Valor),
             tipo: data.Tipo,
             fecha: data.Fecha
